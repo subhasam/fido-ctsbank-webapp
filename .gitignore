@@ -1,0 +1,16 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Project & Build Directories #
+/target
+/.classpath
+/.project
+/.settings
+# coverage #
+coverage.ec
+~
+.DS_Store
