@@ -16,21 +16,20 @@
 		<intercept-url pattern="/regitrationConfirm*" access="permitAll" />
 		<intercept-url pattern="/expiredAccount*" access="permitAll" />
 		<intercept-url pattern="/registration*" access="permitAll" />
-		<intercept-url pattern="/badUser*" access="permitAll" />
 		<intercept-url pattern="/resources/**" access="permitAll" />
 		<intercept-url pattern="/invalidSession*" access="isAnonymous()" />
 		<intercept-url pattern="/**" access="isAuthenticated()" />
-		<form-login login-page='/login.html'
-			authentication-failure-url="/login.html?error=true"
+		<form-login login-page='/accountLogin.html'
+			authentication-failure-url="/accountLogin.html?error=true"
 			authentication-success-handler-ref="authenticationSuccessHandler"
 			default-target-url="/homepage.html" />
 		<session-management invalid-session-url="/invalidSession.html"
 			session-fixation-protection="none" />
-		<logout invalidate-session="false" logout-success-url="/logout.html?logSucc=true"
+		<logout invalidate-session="false" logout-success-url="/accountLogout.html?logSucc=true"
 			logout-url="/j_spring_security_logout" delete-cookies="JSESSIONID" />
 	</http>
 
-	<beans:bean id="myAuthenticationSuccessHandler"
+	<beans:bean id="authenticationSuccessHandler"
 		class="poc.ctsbank.fido.security.AuthenticationSuccessHandler" />
 
 	<authentication-manager>

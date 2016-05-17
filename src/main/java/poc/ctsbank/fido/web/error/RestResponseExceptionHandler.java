@@ -17,12 +17,12 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import poc.ctsbank.fido.web.util.GenericResponse;
 
 @ControllerAdvice
-public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+public class RestResponseExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Autowired
     private MessageSource messages;
 
-    public RestResponseEntityExceptionHandler() {
+    public RestResponseExceptionHandler() {
         super();
     }
 

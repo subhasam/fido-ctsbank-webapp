@@ -6,7 +6,7 @@ import org.springframework.validation.Validator;
 
 import poc.ctsbank.fido.persistence.service.AccountOwnerDTO;
 
-public class UserValidator implements Validator {
+public class AccountOwnerValidator implements Validator {
 
     @Override
     public boolean supports(final Class<?> clazz) {

@@ -54,7 +54,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public AccountOwner getAccountOwnerDetails(final String verificationToken) {
-        final AccountOwner user = tokenRepository.findByToken(verificationToken).getUser();
+        final AccountOwner user = tokenRepository.findByToken(verificationToken).getAccOwner();
         return user;
     }
 
@@ -115,7 +115,7 @@ public class AccountServiceImpl implements AccountService {
             return "invalidToken";
         }
 
-        final AccountOwner accOwner = verificationToken.getUser();
+        final AccountOwner accOwner = verificationToken.getAccOwner();
         final Calendar cal = Calendar.getInstance();
         if ((verificationToken.getExpiryDate().getTime() - cal.getTime().getTime()) <= 0) {
             return "expired";
