@@ -34,7 +34,7 @@ public class PersistenceJPAConfig {
 
     //
 
-    @Bean
+   /* @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         final LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
@@ -43,7 +43,7 @@ public class PersistenceJPAConfig {
         em.setJpaVendorAdapter(vendorAdapter);
         em.setJpaProperties(additionalProperties());
         return em;
-    }
+    }*/
 
     @Bean
     public DataSource dataSource() {
@@ -55,23 +55,23 @@ public class PersistenceJPAConfig {
         return dataSource;
     }
 
-    @Bean
+    /*@Bean
     public JpaTransactionManager transactionManager() {
         final JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
         return transactionManager;
-    }
+    }*/
 
     @Bean
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-    final Properties additionalProperties() {
+    /*final Properties additionalProperties() {
         final Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
         hibernateProperties.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
         return hibernateProperties;
-    }
+    }*/
 
 }

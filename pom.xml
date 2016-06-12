@@ -18,13 +18,13 @@
         <java-version>1.8</java-version>        
         <!-- spring  -->
         <spring.version>4.2.4.RELEASE</spring.version>
-        <spring.security.version>4.0.3.RELEASE</spring.security.version>
+        <spring-security.version>4.0.3.RELEASE</spring-security.version>
         <!-- persistence -->
         <hibernate.version>4.3.11.Final</hibernate.version>
         <hibernate-validator.version>5.2.2.Final</hibernate-validator.version>
-        <mysql-connector-java.version>5.1.37</mysql-connector-java.version>
+        <mysql-connector.version>5.1.37</mysql-connector.version>
         <spring-data-jpa.version>1.9.2.RELEASE</spring-data-jpa.version>
-        
+		<commons-dbcp.version>1.4</commons-dbcp.version>        
         
         <!-- logging -->
         <org.slf4j.version>1.7.13</org.slf4j.version>
@@ -63,14 +63,42 @@
     <dependencies>
     
 		<!-- Spring Boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-    
-        <dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!-- Template Engine -->
+		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+		
+		<!-- Spring MVC -->		
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- Spring Security -->
@@ -78,15 +106,19 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
+            <version>${spring-security.version}</version>
         </dependency>
+		
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
-        </dependency>
+        </dependency>		
         
         <dependency>
 		    <groupId>org.thymeleaf.extras</groupId>
@@ -138,17 +170,6 @@
             
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            
-        </dependency>
-
         <!-- Servlet -->
         <dependency>
 		    <groupId>org.aspectj</groupId>
@@ -164,6 +185,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -185,35 +207,45 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
+			<version>${spring-data-jpa.version}</version>
         </dependency>
+		
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
-
-        <dependency>
+		
+		<dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-        </dependency>
+            <version>${hibernate-validator.version}</version>
+        </dependency>        
 
         <!-- DB dependencies -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector.version}</version>
         </dependency>
-        <dependency>
+        
+		<dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
+            <version>${commons-dbcp.version}</version>
         </dependency>
+		
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
+		
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>${javax.mail.version}</version>
         </dependency>
+		
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -228,6 +260,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -336,6 +369,19 @@
                     </configuration>
                 </configuration>
             </plugin>
+			
+			<!-- embedded Jetty server, for testing -->
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.11.v20150529</version>
+				<configuration>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webApp>
+						<contextPath>/</contextPath>
+					</webApp>
+				</configuration>
+			</plugin>
 
         </plugins>
         

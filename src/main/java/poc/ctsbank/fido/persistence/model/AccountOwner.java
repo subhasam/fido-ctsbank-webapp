@@ -25,6 +25,8 @@ public class AccountOwner {
     private String lastName;
 
     private String email;
+    
+    private String accountNumber;
 
     @Column(length = 60)
     private String password;
@@ -77,7 +79,21 @@ public class AccountOwner {
         this.email = username;
     }
 
-    public String getPassword() {
+    /**
+	 * @return the accountNumber
+	 */
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+
+	/**
+	 * @param accountNumber the accountNumber to set
+	 */
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public String getPassword() {
         return password;
     }
 
@@ -127,11 +143,15 @@ public class AccountOwner {
         return true;
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder builder = new StringBuilder();
-        builder.append("User [firstName=").append(firstName).append("]").append("[lastName=").append(lastName).append("]").append("[username").append(email).append("]");
-        return builder.toString();
-    }
+    /* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "AccountOwner [id=" + id + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", email=" + email
+				+ ", accountNumber=" + accountNumber + ", enabled=" + enabled
+				+ ", tokenExpired=" + tokenExpired + ", roles=" + roles + "]";
+	}
 
 }
