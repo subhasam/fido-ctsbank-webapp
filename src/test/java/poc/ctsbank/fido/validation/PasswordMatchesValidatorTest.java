@@ -28,7 +28,7 @@ public class PasswordMatchesValidatorTest {
 
 		fixture.initialize(constraintAnnotation);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -49,7 +49,7 @@ public class PasswordMatchesValidatorTest {
 
 		boolean result = fixture.isValid(obj, context);
 
-		// add additional test code here
+		//TODO
 		assertEquals(true, result);
 	}
 
@@ -71,7 +71,7 @@ public class PasswordMatchesValidatorTest {
 
 		boolean result = fixture.isValid(obj, context);
 
-		// add additional test code here
+		//TODO
 		assertEquals(true, result);
 	}
 

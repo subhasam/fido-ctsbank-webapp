@@ -49,7 +49,7 @@ public class RestResponseExceptionHandlerTest {
 
 		RestResponseExceptionHandler result = new RestResponseExceptionHandler();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -71,7 +71,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleBindException(ex, headers, status, request);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("<400 Bad Request,poc.ctsbank.fido.web.util.GenericAccountRegistrationRes@392cfcfe,{}>", result.toString());
 		assertEquals(true, result.hasBody());
@@ -93,7 +93,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleInternal(ex, request);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.error.RestResponseExceptionHandler.handleInternal(RestResponseExceptionHandler.java:118)
@@ -116,7 +116,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleInvalidOldPassword(ex, request);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.error.RestResponseExceptionHandler.handleInvalidOldPassword(RestResponseExceptionHandler.java:76)
@@ -141,7 +141,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleMethodArgumentNotValid(ex, headers, status, request);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("<400 Bad Request,poc.ctsbank.fido.web.util.GenericAccountRegistrationRes@6a410952,{}>", result.toString());
 		assertEquals(true, result.hasBody());
@@ -163,7 +163,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleUserAlreadyExist(ex, request);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.error.RestResponseExceptionHandler.handleUserAlreadyExist(RestResponseExceptionHandler.java:104)
@@ -186,7 +186,7 @@ public class RestResponseExceptionHandlerTest {
 
 		ResponseEntity<Object> result = fixture.handleUserNotFound(ex, request);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.error.RestResponseExceptionHandler.handleUserNotFound(RestResponseExceptionHandler.java:90)

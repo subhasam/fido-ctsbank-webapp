@@ -25,7 +25,7 @@ public class CtsBankCustomerTestTest {
 
 		CtsBankCustomerTest.main(ctsBankCustArgs);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

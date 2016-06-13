@@ -40,7 +40,7 @@ public class GenericAccountRegistrationResTest {
 
 		GenericAccountRegistrationRes result = new GenericAccountRegistrationRes(message);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("", result.getMessage());
 		assertEquals(null, result.getError());
@@ -61,7 +61,7 @@ public class GenericAccountRegistrationResTest {
 
 		GenericAccountRegistrationRes result = new GenericAccountRegistrationRes(message, error);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("", result.getMessage());
 		assertEquals("", result.getError());
@@ -82,7 +82,7 @@ public class GenericAccountRegistrationResTest {
 
 		GenericAccountRegistrationRes result = new GenericAccountRegistrationRes(fieldErrors, globalErrors);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -100,7 +100,7 @@ public class GenericAccountRegistrationResTest {
 
 		String result = fixture.getError();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -118,7 +118,7 @@ public class GenericAccountRegistrationResTest {
 
 		String result = fixture.getMessage();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -137,7 +137,7 @@ public class GenericAccountRegistrationResTest {
 
 		fixture.setError(error);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -155,7 +155,7 @@ public class GenericAccountRegistrationResTest {
 
 		fixture.setMessage(message);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

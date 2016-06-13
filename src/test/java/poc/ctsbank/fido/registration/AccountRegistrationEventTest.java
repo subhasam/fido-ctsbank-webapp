@@ -26,7 +26,7 @@ public class AccountRegistrationEventTest {
 
 		AccountRegistrationEvent result = new AccountRegistrationEvent(accountOwner);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(1465786607520L, result.getTimestamp());
 		assertEquals("poc.ctsbank.fido.registration.AccountRegistrationEvent[source=AccountOwner [id=null, firstName=null, lastName=null, email=null, accountNumber=null, enabled=false, tokenExpired=false, roles=null]]", result.toString());
@@ -46,7 +46,7 @@ public class AccountRegistrationEventTest {
 
 		AccountOwner result = fixture.getAccountOwner();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("AccountOwner [id=null, firstName=null, lastName=null, email=null, accountNumber=null, enabled=false, tokenExpired=false, roles=null]", result.toString());
 		assertEquals(null, result.getId());

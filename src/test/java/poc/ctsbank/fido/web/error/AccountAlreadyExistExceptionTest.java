@@ -34,7 +34,7 @@ public class AccountAlreadyExistExceptionTest {
 
 		AccountAlreadyExistException result = new AccountAlreadyExistException();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
 		assertEquals("poc.ctsbank.fido.web.error.AccountAlreadyExistException", result.toString());
@@ -56,7 +56,7 @@ public class AccountAlreadyExistExceptionTest {
 
 		AccountAlreadyExistException result = new AccountAlreadyExistException(message);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
 		assertEquals("poc.ctsbank.fido.web.error.AccountAlreadyExistException: ", result.toString());
@@ -78,7 +78,7 @@ public class AccountAlreadyExistExceptionTest {
 
 		AccountAlreadyExistException result = new AccountAlreadyExistException(cause);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("poc.ctsbank.fido.web.error.AccountAlreadyExistException: java.lang.Throwable", result.toString());
 		assertEquals("java.lang.Throwable", result.getMessage());
@@ -100,7 +100,7 @@ public class AccountAlreadyExistExceptionTest {
 
 		AccountAlreadyExistException result = new AccountAlreadyExistException(message, cause);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("poc.ctsbank.fido.web.error.AccountAlreadyExistException: ", result.toString());
 		assertEquals("", result.getMessage());

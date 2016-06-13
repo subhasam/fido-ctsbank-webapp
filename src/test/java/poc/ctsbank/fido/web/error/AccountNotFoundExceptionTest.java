@@ -34,7 +34,7 @@ public class AccountNotFoundExceptionTest {
 
 		AccountNotFoundException result = new AccountNotFoundException();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
 		assertEquals("poc.ctsbank.fido.web.error.AccountNotFoundException", result.toString());
@@ -56,7 +56,7 @@ public class AccountNotFoundExceptionTest {
 
 		AccountNotFoundException result = new AccountNotFoundException(message);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
 		assertEquals("poc.ctsbank.fido.web.error.AccountNotFoundException: ", result.toString());
@@ -78,7 +78,7 @@ public class AccountNotFoundExceptionTest {
 
 		AccountNotFoundException result = new AccountNotFoundException(cause);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("poc.ctsbank.fido.web.error.AccountNotFoundException: java.lang.Throwable", result.toString());
 		assertEquals("java.lang.Throwable", result.getMessage());
@@ -100,7 +100,7 @@ public class AccountNotFoundExceptionTest {
 
 		AccountNotFoundException result = new AccountNotFoundException(message, cause);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals("poc.ctsbank.fido.web.error.AccountNotFoundException: ", result.toString());
 		assertEquals("", result.getMessage());

@@ -35,7 +35,7 @@ public class RESTServiceUtilTest {
 
 		RestTemplate result = RESTServiceUtil.createRestTemplate();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 

@@ -31,7 +31,7 @@ public class AuthStatusRequestListenerTest {
 		throws Exception {
 		AuthStatusRequestListener result = new AuthStatusRequestListener();
 		assertNotNull(result);
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -50,7 +50,7 @@ public class AuthStatusRequestListenerTest {
 
 		String result = fixture.getAccAuthStatus();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -70,7 +70,7 @@ public class AuthStatusRequestListenerTest {
 
 		boolean result = fixture.isAuthStatChanged();
 
-		// add additional test code here
+		//TODO
 		assertEquals(true, result);
 	}
 
@@ -92,7 +92,7 @@ public class AuthStatusRequestListenerTest {
 
 		String result = fixture.monitorAuthSatus(initialStatus, accountSrvcDAO);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.dao.AuthStatusRequestListener.shutdownArtifactExecuterSrvc(AuthStatusRequestListener.java:267)
@@ -117,7 +117,7 @@ public class AuthStatusRequestListenerTest {
 
 		fixture.setAccAuthStatus(accAuthStatus);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -137,7 +137,7 @@ public class AuthStatusRequestListenerTest {
 
 		fixture.setAuthStatChanged(authStatChanged);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

@@ -31,7 +31,7 @@ public class FIDOAuthernticationServiceTest {
 		throws Exception {
 		FIDOAuthernticationService result = new FIDOAuthernticationService();
 		assertNotNull(result);
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -48,7 +48,7 @@ public class FIDOAuthernticationServiceTest {
 
 		String result = fixture.getUserAccountDualAuthStatus();
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.ArrayIndexOutOfBoundsException: 0
 		//       at poc.ctsbank.fido.persistence.service.FIDOAuthernticationService.getUserAccountDualAuthStatus(FIDOAuthernticationService.java:37)

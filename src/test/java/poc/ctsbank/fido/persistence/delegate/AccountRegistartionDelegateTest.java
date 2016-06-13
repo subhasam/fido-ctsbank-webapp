@@ -38,7 +38,7 @@ public class AccountRegistartionDelegateTest {
 
 		AccountService result = fixture.getUserService();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -59,7 +59,7 @@ public class AccountRegistartionDelegateTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.isValidUser(AccountServiceImpl.java:54)
@@ -83,7 +83,7 @@ public class AccountRegistartionDelegateTest {
 
 		fixture.setUserService(accountService);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

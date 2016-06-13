@@ -43,7 +43,7 @@ public class AccountOwnerDTOTest {
 
 		boolean result = fixture.equals(obj);
 
-		// add additional test code here
+		//TODO
 		assertEquals(false, result);
 	}
 
@@ -68,7 +68,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getAccountNumber();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -93,7 +93,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getEmail();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -118,7 +118,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getFirstName();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -143,7 +143,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getLastName();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -168,7 +168,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getMatchingPassword();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -193,7 +193,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getPassword();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -218,7 +218,7 @@ public class AccountOwnerDTOTest {
 
 		String result = fixture.getRoutingNumber();
 
-		// add additional test code here
+		//TODO
 		assertEquals("", result);
 	}
 
@@ -243,7 +243,7 @@ public class AccountOwnerDTOTest {
 
 		int result = fixture.hashCode();
 
-		// add additional test code here
+		//TODO
 		assertEquals(1742810335, result);
 	}
 
@@ -269,7 +269,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setAccountNumber(accountNumber);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -294,7 +294,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setEmail(email);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -319,7 +319,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setFirstName(firstName);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -344,7 +344,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setLastName(lastName);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -369,7 +369,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setMatchingPassword(matchingPassword);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -394,7 +394,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setPassword(password);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -419,7 +419,7 @@ public class AccountOwnerDTOTest {
 
 		fixture.setRoutingNumber(routingNumber);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

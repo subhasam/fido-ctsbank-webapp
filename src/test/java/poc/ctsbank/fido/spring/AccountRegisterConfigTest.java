@@ -35,7 +35,7 @@ public class AccountRegisterConfigTest {
 
 		AccountRegisterConfig result = new AccountRegisterConfig();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getValidator());
 		assertEquals(null, result.getMessageCodesResolver());
@@ -56,7 +56,7 @@ public class AccountRegisterConfigTest {
 
 		fixture.addInterceptors(registry);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -74,7 +74,7 @@ public class AccountRegisterConfigTest {
 
 		fixture.addResourceHandlers(registry);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.IllegalArgumentException: Cannot resolve ServletContextResource without ServletContext
 		//       at org.springframework.util.Assert.notNull(Assert.java:115)
@@ -100,7 +100,7 @@ public class AccountRegisterConfigTest {
 
 		fixture.addViewControllers(registry);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    org.springframework.context.ApplicationContextException: Invalid application context: needs to be of type [org.springframework.context.ApplicationContext]
 		//       at org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(ApplicationObjectSupport.java:70)
@@ -124,7 +124,7 @@ public class AccountRegisterConfigTest {
 
 		fixture.configureDefaultServletHandling(configurer);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -141,7 +141,7 @@ public class AccountRegisterConfigTest {
 
 		LocaleResolver result = fixture.localeResolver();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -159,7 +159,7 @@ public class AccountRegisterConfigTest {
 
 		PasswordMatchesValidator result = fixture.passwordMatchesValidator();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -177,7 +177,7 @@ public class AccountRegisterConfigTest {
 
 		EmailValidator result = fixture.usernameValidator();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 

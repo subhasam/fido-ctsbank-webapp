@@ -36,7 +36,7 @@ public class AccountDBConfigTest {
 
 		AccountDBConfig result = new AccountDBConfig();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -54,7 +54,7 @@ public class AccountDBConfigTest {
 
 		DataSource result = fixture.dataSource();
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.spring.AccountDBConfig.dataSource(AccountDBConfig.java:45)
@@ -75,7 +75,7 @@ public class AccountDBConfigTest {
 
 		PersistenceExceptionTranslationPostProcessor result = fixture.exceptionTranslation();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(Integer.MAX_VALUE, result.getOrder());
 		assertEquals("proxyTargetClass=false; optimize=false; opaque=false; exposeProxy=false; frozen=false", result.toString());

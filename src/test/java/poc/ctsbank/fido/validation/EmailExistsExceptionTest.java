@@ -25,7 +25,7 @@ public class EmailExistsExceptionTest {
 
 		EmailExistsException result = new EmailExistsException(message);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getCause());
 		assertEquals("poc.ctsbank.fido.validation.EmailExistsException: ", result.toString());

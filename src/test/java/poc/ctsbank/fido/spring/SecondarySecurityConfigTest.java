@@ -32,7 +32,7 @@ public class SecondarySecurityConfigTest {
 
 		SecondarySecurityConfig result = new SecondarySecurityConfig();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -50,7 +50,7 @@ public class SecondarySecurityConfigTest {
 
 		DaoAuthenticationProvider result = fixture.authProvider();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(false, result.isForcePrincipalAsString());
 		assertEquals(true, result.isHideUserNotFoundExceptions());
@@ -71,7 +71,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(auth);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -89,7 +89,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -107,7 +107,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -125,7 +125,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -143,7 +143,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -161,7 +161,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -179,7 +179,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(http);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -197,7 +197,7 @@ public class SecondarySecurityConfigTest {
 
 		fixture.configure(web);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -214,7 +214,7 @@ public class SecondarySecurityConfigTest {
 
 		PasswordEncoder result = fixture.encoder();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 

@@ -29,7 +29,7 @@ public class AccountServiceImplTest {
 
 		fixture.changeAccountOwnerPassword(user, password);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.changeAccountOwnerPassword(AccountServiceImpl.java:177)
@@ -52,7 +52,7 @@ public class AccountServiceImplTest {
 
 		boolean result = fixture.checkIfValidOldPassword(user, oldPassword);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.checkIfValidOldPassword(AccountServiceImpl.java:190)
@@ -76,7 +76,7 @@ public class AccountServiceImplTest {
 
 		boolean result = fixture.checkIfValidOldPassword(user, oldPassword);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.checkIfValidOldPassword(AccountServiceImpl.java:190)
@@ -99,7 +99,7 @@ public class AccountServiceImplTest {
 
 		fixture.createPasswordResetTokenForUser(user, token);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -118,7 +118,7 @@ public class AccountServiceImplTest {
 
 		fixture.createVerificationTokenForUser(user, token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.createVerificationTokenForUser(AccountServiceImpl.java:130)
@@ -139,7 +139,7 @@ public class AccountServiceImplTest {
 
 		fixture.deleteAccount(user);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.deleteAccount(AccountServiceImpl.java:118)
@@ -160,7 +160,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.findAccountOwnerByEmail(email);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.findAccountOwnerByEmail(AccountServiceImpl.java:155)
@@ -182,7 +182,7 @@ public class AccountServiceImplTest {
 
 		VerificationToken result = fixture.generateNewVerificationToken(existingVerificationToken);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.generateNewVerificationToken(AccountServiceImpl.java:141)
@@ -204,7 +204,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.getAccountOwnerByID(id);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.getAccountOwnerByID(AccountServiceImpl.java:166)
@@ -226,7 +226,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.getAccountOwnerByPasswordResetToken(token);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -245,7 +245,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.getAccountOwnerDetails(verificationToken);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.getAccountOwnerDetails(AccountServiceImpl.java:86)
@@ -267,7 +267,7 @@ public class AccountServiceImplTest {
 
 		VerificationToken result = fixture.getVerificationToken(VerificationToken);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.getVerificationToken(AccountServiceImpl.java:98)
@@ -290,7 +290,7 @@ public class AccountServiceImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.isValidUser(AccountServiceImpl.java:54)
@@ -313,7 +313,7 @@ public class AccountServiceImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.isValidUser(AccountServiceImpl.java:54)
@@ -336,7 +336,7 @@ public class AccountServiceImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.isValidUser(AccountServiceImpl.java:54)
@@ -359,7 +359,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.registerAccount(accountDTO);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.emailExist(AccountServiceImpl.java:223)
@@ -386,7 +386,7 @@ public class AccountServiceImplTest {
 
 		AccountOwner result = fixture.registerAccount(accountDTO);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.emailExist(AccountServiceImpl.java:223)
@@ -409,7 +409,7 @@ public class AccountServiceImplTest {
 
 		fixture.saveRegisteredAccountOwner(user);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.saveRegisteredAccountOwner(AccountServiceImpl.java:108)
@@ -431,7 +431,7 @@ public class AccountServiceImplTest {
 
 		String result = fixture.validatePasswordResetToken(id, token);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -450,7 +450,7 @@ public class AccountServiceImplTest {
 
 		String result = fixture.validateVerificationToken(token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.validateVerificationToken(AccountServiceImpl.java:201)
@@ -472,7 +472,7 @@ public class AccountServiceImplTest {
 
 		String result = fixture.validateVerificationToken(token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.validateVerificationToken(AccountServiceImpl.java:201)
@@ -494,7 +494,7 @@ public class AccountServiceImplTest {
 
 		String result = fixture.validateVerificationToken(token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.persistence.service.AccountServiceImpl.validateVerificationToken(AccountServiceImpl.java:201)

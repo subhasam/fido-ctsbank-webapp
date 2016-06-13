@@ -29,7 +29,7 @@ public class AccountAuthStatusListenerTest {
 
 		Object result = fixture.monitorStatusChange(accAuthInitialStat, event);
 
-		// add additional test code here
+		//TODO
 		assertEquals(null, result);
 	}
 
@@ -48,7 +48,7 @@ public class AccountAuthStatusListenerTest {
 
 		fixture.onApplicationEvent(event);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.registration.listener.AccountAuthStatusListener.confirmRegistration(AccountAuthStatusListener.java:56)

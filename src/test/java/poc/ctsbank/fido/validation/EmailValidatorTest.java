@@ -32,7 +32,7 @@ public class EmailValidatorTest {
 		throws Exception {
 		EmailValidator result = new EmailValidator();
 		assertNotNull(result);
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -50,7 +50,7 @@ public class EmailValidatorTest {
 
 		fixture.initialize(constraintAnnotation);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class EmailValidatorTest {
 
 		boolean result = fixture.isValid(username, context);
 
-		// add additional test code here
+		//TODO
 		assertEquals(false, result);
 	}
 

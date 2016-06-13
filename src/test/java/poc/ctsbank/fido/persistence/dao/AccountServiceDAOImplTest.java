@@ -30,7 +30,7 @@ public class AccountServiceDAOImplTest {
 
 		DataSource result = fixture.getAccOwnerDataSource();
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 		assertEquals(null, result.getLogWriter());
 		assertEquals(0, result.getLoginTimeout());
@@ -52,7 +52,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -72,7 +72,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -92,7 +92,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -112,7 +112,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -132,7 +132,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -152,7 +152,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -172,7 +172,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -192,7 +192,7 @@ public class AccountServiceDAOImplTest {
 
 		String result = fixture.getUpdatedStatusInDB(fieldName);
 
-		// add additional test code here
+		//TODO
 		assertNotNull(result);
 	}
 
@@ -213,7 +213,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -234,7 +234,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -255,7 +255,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -276,7 +276,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -297,7 +297,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -318,7 +318,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -339,7 +339,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -360,7 +360,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -381,7 +381,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -402,7 +402,7 @@ public class AccountServiceDAOImplTest {
 
 		boolean result = fixture.isValidUser(username, password);
 
-		// add additional test code here
+		//TODO
 		assertTrue(result);
 	}
 
@@ -422,7 +422,7 @@ public class AccountServiceDAOImplTest {
 
 		fixture.setAccOwnerDataSource(accOwnerDataSource);
 
-		// add additional test code here
+		//TODO
 	}
 
 	/**

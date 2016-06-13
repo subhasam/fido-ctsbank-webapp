@@ -33,7 +33,7 @@ public class AccountRegistrationControllerTest extends TestCase {
 
 		String result = fixture.confirmRegistration(locale, model, token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.controller.AccountRegistrationController.confirmRegistration(AccountRegistrationController.java:81)
@@ -56,7 +56,7 @@ public class AccountRegistrationControllerTest extends TestCase {
 
 		String result = fixture.confirmRegistration(locale, model, token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.controller.AccountRegistrationController.confirmRegistration(AccountRegistrationController.java:81)
@@ -79,7 +79,7 @@ public class AccountRegistrationControllerTest extends TestCase {
 
 		String result = fixture.confirmRegistration(locale, model, token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.controller.AccountRegistrationController.confirmRegistration(AccountRegistrationController.java:81)
@@ -102,7 +102,7 @@ public class AccountRegistrationControllerTest extends TestCase {
 
 		String result = fixture.confirmRegistration(locale, model, token);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.controller.AccountRegistrationController.confirmRegistration(AccountRegistrationController.java:81)
@@ -124,7 +124,7 @@ public class AccountRegistrationControllerTest extends TestCase {
 
 		GenericAccountRegistrationRes result = fixture.registerUserAccount(accountDto, request);
 
-		// add additional test code here
+		//TODO
 		// An unexpected exception was thrown in user code while executing this test:
 		//    java.lang.NullPointerException
 		//       at poc.ctsbank.fido.web.controller.AccountRegistrationController.registerUserAccount(AccountRegistrationController.java:67)
