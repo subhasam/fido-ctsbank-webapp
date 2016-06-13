@@ -10,7 +10,6 @@
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-
     <!-- Configure the data source bean -->
     
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -20,30 +19,7 @@
         <property name="password" value="${jdbc.password}"/>
     </bean>    
 
-    <!-- Configure the entity manager factory bean -->
-    <!-- 
-    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-        <property name="dataSource" ref="dataSource"/> 
-        <property name="packagesToScan" value="poc.ctsbank.fido.persistence.model"/>
-        <property name="jpaVendorAdapter">
-            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
-        </property>
-        <property name="jpaProperties">
-            <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
-                <prop key="hibernate.show_sql">true</prop>
-            </props>
-        </property>
-    </bean>
-    -->
-
-    <!-- Configure the transaction manager bean -->
-    <!--
-    <bean id="transactionManager"
-          class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory"/>
-    </bean>
-    -->
+    
 
     <!-- Enable annotation driven transaction management -->
     <tx:annotation-driven/>

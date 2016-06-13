@@ -8,13 +8,11 @@
 
     <import resource="ctsbankconfig-mvc.xml"/>
 
-    <!-- <import resource="ctsbankconfig-data.xml"/>  -->
-
     <import resource="ctsbankconfig-security.xml"/>
 
     <!-- Scans within the base package of the application for @Component classes to configure as beans -->
     <context:component-scan base-package="poc.ctsbank.fido.*"/>
 
-    <context:property-placeholder location="classpath:persistence.properties"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
 </beans>
