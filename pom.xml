@@ -344,7 +344,6 @@
                         <exclude>**/*LiveTest.java</exclude>
                     </excludes>
                     <systemPropertyVariables>
-                        <!-- <provPersistenceTarget>h2</provPersistenceTarget> -->
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
@@ -358,8 +357,7 @@
                     <container>
                         <containerId>jetty8x</containerId>
                         <type>embedded</type>
-                        <systemProperties>
-                            <!-- <provPersistenceTarget>cargo</provPersistenceTarget> -->
+                        <systemProperties>                            
                         </systemProperties>
                     </container>
                     <configuration>

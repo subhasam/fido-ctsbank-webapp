@@ -16,9 +16,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
+/**
+ * @author Subhasis Samal
+ *
+ * @version $Revision: 1.0 $
+ */
 @Configuration
 @ComponentScan(basePackages = { "poc.ctsbank.fido.security" })
-// @ImportResource({ "classpath:webSecurityConfig.xml" })
 @EnableWebSecurity
 public class SecondarySecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -35,16 +39,31 @@ public class SecondarySecurityConfig extends WebSecurityConfigurerAdapter {
         super();
     }
 
+    /**
+     * Method configure.
+     * @param auth AuthenticationManagerBuilder
+     * @throws Exception
+     */
     @Override
     protected void configure(final AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authProvider());
     }
 
+    /**
+     * Method configure.
+     * @param web WebSecurity
+     * @throws Exception
+     */
     @Override
     public void configure(final WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/resources/**");
     }
 
+    /**
+     * Method configure.
+     * @param http HttpSecurity
+     * @throws Exception
+     */
     @Override
     protected void configure(final HttpSecurity http) throws Exception {
         // @formatter:off
@@ -80,6 +99,10 @@ public class SecondarySecurityConfig extends WebSecurityConfigurerAdapter {
 
     // beans
 
+    /**
+     * Method authProvider.
+     * @return DaoAuthenticationProvider
+     */
     @Bean
     public DaoAuthenticationProvider authProvider() {
         final DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -88,6 +111,10 @@ public class SecondarySecurityConfig extends WebSecurityConfigurerAdapter {
         return authProvider;
     }
 
+    /**
+     * Method encoder.
+     * @return PasswordEncoder
+     */
     @Bean
     public PasswordEncoder encoder() {
         return new BCryptPasswordEncoder(11);

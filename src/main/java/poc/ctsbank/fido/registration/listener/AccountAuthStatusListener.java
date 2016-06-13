@@ -13,6 +13,11 @@ import poc.ctsbank.fido.persistence.model.AccountOwner;
 import poc.ctsbank.fido.persistence.service.AccountService;
 import poc.ctsbank.fido.registration.AccountRegistrationEvent;
 
+/**
+ * @author Subhasis Samal
+ *
+ * @version $Revision: 1.0 $
+ */
 @Component
 public class AccountAuthStatusListener implements ApplicationListener<AccountRegistrationEvent> {
     @Autowired
@@ -21,38 +26,34 @@ public class AccountAuthStatusListener implements ApplicationListener<AccountReg
     @Autowired
     private MessageSource messages;
 
-    @Autowired
-    private JavaMailSender mailSender;
-
+    /**
+     * Method onApplicationEvent.
+     * @param event AccountRegistrationEvent
+     */
     @Override
     public void onApplicationEvent(final AccountRegistrationEvent event) {
         this.confirmRegistration(event);
     }
     
+    /**
+     * Method monitorStatusChange.
+     * @param accAuthInitialStat String
+     * @param event AccountRegistrationEvent
+     * @return Object
+     */
     public Object monitorStatusChange(String accAuthInitialStat, final AccountRegistrationEvent event){
     	String updatedAccAuthStat = null;
 		return updatedAccAuthStat;    	
     }
 
+    /**
+     * Method confirmRegistration.
+     * @param event AccountRegistrationEvent
+     */
     private void confirmRegistration(final AccountRegistrationEvent event) {
         final AccountOwner user = event.getAccountOwner();
         final String token = UUID.randomUUID().toString();
         accService.createVerificationTokenForUser(user, token);
-
-        final SimpleMailMessage email = constructEmailMessage(event, user, token);
-        mailSender.send(email);
-    }
-
-    private final SimpleMailMessage constructEmailMessage(final AccountRegistrationEvent event, final AccountOwner user, final String token) {
-        final String recipientAddress = user.getEmail();
-        final String subject = "Account Creation Confirmation";
-        final String confirmationUrl = "/regitrationConfirm.html?token=" + token;//event.getAppUrl() +
-        final String message = messages.getMessage("message.regSucc", null, null);
-        final SimpleMailMessage email = new SimpleMailMessage();
-        email.setTo(recipientAddress);
-        email.setSubject(subject);
-        email.setText(message + " \r\n" + confirmationUrl);
-        return email;
     }
 
 }

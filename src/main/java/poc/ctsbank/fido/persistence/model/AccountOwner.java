@@ -13,6 +13,11 @@ import javax.persistence.ManyToMany;
 
 import org.springframework.context.annotation.Role;
 
+/**
+ * @author Subhasis Samal
+ *
+ * @version $Revision: 1.0 $
+ */
 @Entity
 public class AccountOwner {
 
@@ -27,8 +32,10 @@ public class AccountOwner {
     private String email;
     
     private String accountNumber;
+    
+    private String routingNumber;  
 
-    @Column(length = 60)
+	@Column(length = 60)
     private String password;
 
     private boolean enabled;
@@ -47,41 +54,73 @@ public class AccountOwner {
         this.tokenExpired = false;
     }
 
+    /**
+     * Method getId.
+     * @return Long
+     */
     public Long getId() {
         return id;
     }
 
+    /**
+     * Method setId.
+     * @param id Long
+     */
     public void setId(final Long id) {
         this.id = id;
     }
 
+    /**
+     * Method getFirstName.
+     * @return String
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * Method setFirstName.
+     * @param firstName String
+     */
     public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Method getLastName.
+     * @return String
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Method setLastName.
+     * @param lastName String
+     */
     public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Method getEmail.
+     * @return String
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Method setEmail.
+     * @param username String
+     */
     public void setEmail(final String username) {
         this.email = username;
     }
 
     /**
-	 * @return the accountNumber
-	 */
+	
+	 * @return the accountNumber */
 	public String getAccountNumber() {
 		return accountNumber;
 	}
@@ -93,30 +132,72 @@ public class AccountOwner {
 		this.accountNumber = accountNumber;
 	}
 
+	/**
+	 * Method getPassword.
+	 * @return String
+	 */
 	public String getPassword() {
         return password;
     }
 
+    /**
+     * Method setPassword.
+     * @param password String
+     */
     public void setPassword(final String password) {
         this.password = password;
     }
 
+    /**
+     * Method isEnabled.
+     * @return boolean
+     */
     public boolean isEnabled() {
         return enabled;
     }
 
+    /**
+     * Method setEnabled.
+     * @param enabled boolean
+     */
     public void setEnabled(final boolean enabled) {
         this.enabled = enabled;
     }
 
+    /**
+     * Method isTokenExpired.
+     * @return boolean
+     */
     public boolean isTokenExpired() {
         return tokenExpired;
     }
 
+    /**
+     * Method setTokenExpired.
+     * @param expired boolean
+     */
     public void setTokenExpired(final boolean expired) {
         this.tokenExpired = expired;
     }
+    
+    /**
+   	 * @return the routingNumber
+   	 */
+   	public String getRoutingNumber() {
+   		return routingNumber;
+   	}
 
+   	/**
+   	 * @param routingNumber the routingNumber to set
+   	 */
+   	public void setRoutingNumber(String routingNumber) {
+   		this.routingNumber = routingNumber;
+   	}
+
+    /**
+     * Method hashCode.
+     * @return int
+     */
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -125,6 +206,11 @@ public class AccountOwner {
         return result;
     }
 
+    /**
+     * Method equals.
+     * @param obj Object
+     * @return boolean
+     */
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {

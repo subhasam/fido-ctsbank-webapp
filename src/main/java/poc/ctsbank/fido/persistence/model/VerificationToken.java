@@ -11,6 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+/**
+ * @author Subhasis Samal
+ *
+ * @version $Revision: 1.0 $
+ */
 @Entity
 public class VerificationToken {
 
@@ -32,6 +37,10 @@ public class VerificationToken {
         super();
     }
 
+    /**
+     * Constructor for VerificationToken.
+     * @param token String
+     */
     public VerificationToken(final String token) {
         super();
 
@@ -39,6 +48,11 @@ public class VerificationToken {
         this.expiryDate = calculateExpiryDate(EXPIRATION);
     }
 
+    /**
+     * Constructor for VerificationToken.
+     * @param token String
+     * @param accHolder AccountOwner
+     */
     public VerificationToken(final String token, final AccountOwner accHolder) {
         super();
 
@@ -47,30 +61,59 @@ public class VerificationToken {
         this.expiryDate = calculateExpiryDate(EXPIRATION);
     }
 
+    /**
+     * Method getToken.
+     * @return String
+     */
     public String getToken() {
         return token;
     }
 
+    /**
+     * Method setToken.
+     * @param token String
+     */
     public void setToken(final String token) {
         this.token = token;
     }
 
+    /**
+     * Method getAccOwner.
+     * @return AccountOwner
+     */
     public AccountOwner getAccOwner() {
         return accOwner;
     }
 
+    /**
+     * Method setAccOwner.
+     * @param user AccountOwner
+     */
     public void setAccOwner(final AccountOwner user) {
         this.accOwner = user;
     }
 
+    /**
+     * Method getExpiryDate.
+     * @return Date
+     */
     public Date getExpiryDate() {
         return expiryDate;
     }
 
+    /**
+     * Method setExpiryDate.
+     * @param expiryDate Date
+     */
     public void setExpiryDate(final Date expiryDate) {
         this.expiryDate = expiryDate;
     }
 
+    /**
+     * Method calculateExpiryDate.
+     * @param expiryTimeInMinutes int
+     * @return Date
+     */
     private Date calculateExpiryDate(final int expiryTimeInMinutes) {
         final Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(new Date().getTime());
@@ -78,6 +121,10 @@ public class VerificationToken {
         return new Date(cal.getTime().getTime());
     }
 
+    /**
+     * Method updateToken.
+     * @param token String
+     */
     public void updateToken(final String token) {
         this.token = token;
         this.expiryDate = calculateExpiryDate(EXPIRATION);
@@ -85,6 +132,10 @@ public class VerificationToken {
 
     //
 
+    /**
+     * Method hashCode.
+     * @return int
+     */
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -95,6 +146,11 @@ public class VerificationToken {
         return result;
     }
 
+    /**
+     * Method equals.
+     * @param obj Object
+     * @return boolean
+     */
     @Override
     public boolean equals(final Object obj) {
         if (this == obj) {
@@ -131,6 +187,10 @@ public class VerificationToken {
         return true;
     }
 
+    /**
+     * Method toString.
+     * @return String
+     */
     @Override
     public String toString() {
         final StringBuilder builder = new StringBuilder();

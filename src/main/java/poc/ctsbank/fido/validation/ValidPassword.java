@@ -12,16 +12,33 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
+/**
+ * @author Subhasis Samal
+ *
+ * @version $Revision: 1.0 $
+ */
 @Documented
 @Constraint(validatedBy = PasswordConstraintValidator.class)
 @Target({ TYPE, FIELD, ANNOTATION_TYPE })
 @Retention(RUNTIME)
 public @interface ValidPassword {
 
+    /**
+     * Method message.
+     * @return String
+     */
     String message() default "Invalid Password";
 
+    /**
+     * Method groups.
+     * @return Class<?>[]
+     */
     Class<?>[] groups() default {};
 
+    /**
+     * Method payload.
+     * @return Class<? extends Payload>[]
+     */
     Class<? extends Payload>[] payload() default {};
 
 }

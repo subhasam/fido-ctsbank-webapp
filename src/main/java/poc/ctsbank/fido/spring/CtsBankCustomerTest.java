@@ -9,12 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author Subhasis Samal
  *
+ * @version $Revision: 1.0 $
  */
 @SpringBootApplication
 public class CtsBankCustomerTest {
 
 	/**
-	 * @param args
+	
+	 * @param ctsBankCustArgs String[]
 	 */
 	public static void main(String[] ctsBankCustArgs) {
 		SpringApplication.run(CtsBankCustomerTest.class, ctsBankCustArgs);

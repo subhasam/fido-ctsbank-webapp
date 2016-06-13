@@ -12,6 +12,25 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a th:href="@{/logout}" th:text="#{label.pages.logout}">logout</a> </li>
       </ul>
+      <div class="row wrapper">
+			<form name='f' action="login" method='POST' onsubmit="return validate();">
+				<label class="col-sm-4" th:text="#{label.form.accountOwnerFirstName}">Account Owner First Name</label> 
+				<span class="col-sm-8"><input class="form-control"
+					type='text' name='accountOwnerFirstName' value='' /></span> <br />
+				<label class="col-sm-4" th:text="#{label.form.accountOwnerLastName}">Account Owner Last Name</label> 
+				<span class="col-sm-8"><input class="form-control"
+					type='text' name='accountOwnerLastName' value='' /></span> <br />
+				<label class="col-sm-4" th:text="#{label.form.accountNumber}">Account Number</label> 
+				<span class="col-sm-8"><input class="form-control"
+					type='text' name='accountNumber' value='' /></span> <br />
+				<label class="col-sm-4" th:text="#{label.form.routingNumber}">Routing Number</label> 
+				<span class="col-sm-8"><input class="form-control"
+					type='text' name='routingNumber' value='' /></span> <br />
+				<br /> <br />
+				<br /> <input class="btn btn-primary" name="Add" type="submit"
+					th:value="Add" />
+			</form>
+	 </div>
     </div>
 </nav>
 
