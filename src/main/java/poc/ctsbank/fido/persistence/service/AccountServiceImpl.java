@@ -67,8 +67,8 @@ public class AccountServiceImpl implements AccountService {
         }
         final AccountOwner accountOwner = new AccountOwner();
 
-        accountOwner.setFirstName(accountDTO.getFirstName());
-        accountOwner.setLastName(accountDTO.getLastName());
+        accountOwner.setAccountOwnerFirstName(accountDTO.getFirstName());
+        accountOwner.setAccountOwnerLastName(accountDTO.getLastName());
         accountOwner.setPassword(passwordEncoder.encode(accountDTO.getPassword()));
         accountOwner.setEmail(accountDTO.getEmail());
 

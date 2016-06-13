@@ -25,9 +25,9 @@ public class AccountOwner {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String firstName;
+    private String accountOwnerFirstName;
 
-    private String lastName;
+    private String accountOwnerLastName;
 
     private String email;
     
@@ -70,39 +70,36 @@ public class AccountOwner {
         this.id = id;
     }
 
+    
     /**
-     * Method getFirstName.
-     * @return String
-     */
-    public String getFirstName() {
-        return firstName;
-    }
+	 * @return the accountOwnerFirstName
+	 */
+	public String getAccountOwnerFirstName() {
+		return accountOwnerFirstName;
+	}
 
-    /**
-     * Method setFirstName.
-     * @param firstName String
-     */
-    public void setFirstName(final String firstName) {
-        this.firstName = firstName;
-    }
+	/**
+	 * @param accountOwnerFirstName the accountOwnerFirstName to set
+	 */
+	public void setAccountOwnerFirstName(String accountOwnerFirstName) {
+		this.accountOwnerFirstName = accountOwnerFirstName;
+	}
 
-    /**
-     * Method getLastName.
-     * @return String
-     */
-    public String getLastName() {
-        return lastName;
-    }
+	/**
+	 * @return the accountOwnerLastName
+	 */
+	public String getAccountOwnerLastName() {
+		return accountOwnerLastName;
+	}
 
-    /**
-     * Method setLastName.
-     * @param lastName String
-     */
-    public void setLastName(final String lastName) {
-        this.lastName = lastName;
-    }
+	/**
+	 * @param accountOwnerLastName the accountOwnerLastName to set
+	 */
+	public void setAccountOwnerLastName(String accountOwnerLastName) {
+		this.accountOwnerLastName = accountOwnerLastName;
+	}
 
-    /**
+	/**
      * Method getEmail.
      * @return String
      */
@@ -234,8 +231,8 @@ public class AccountOwner {
 	 */
 	@Override
 	public String toString() {
-		return "AccountOwner [id=" + id + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", email=" + email
+		return "AccountOwner [id=" + id + ", firstName=" + accountOwnerFirstName
+				+ ", lastName=" + accountOwnerLastName + ", email=" + email
 				+ ", accountNumber=" + accountNumber + ", enabled=" + enabled
 				+ ", tokenExpired=" + tokenExpired + ", roles=" + roles + "]";
 	}

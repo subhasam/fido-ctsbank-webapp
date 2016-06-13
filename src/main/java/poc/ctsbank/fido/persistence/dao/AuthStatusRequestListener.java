@@ -107,7 +107,7 @@ public class AuthStatusRequestListener {
 							+ ", compared to MaxWaitTime " + jobMaxWaitTime
 							+ "\nTotal Attempts = " + attemptedRetry
 							+ ", Max Allowed Attempts = " + maxRetryforJob);
-					shutdownArtifactExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
+					shutdownAccAuthStatExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
 					break;
 				}
 				Thread.currentThread().sleep(INITIAL_DELAY_MILLISECONDS);
@@ -124,14 +124,14 @@ public class AuthStatusRequestListener {
 		} catch(InterruptedException thIntrptEx){			
 			//Thread.currentThread().interrupt();
 			try {
-				shutdownArtifactExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
+				shutdownAccAuthStatExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
 			} catch (InterruptedException thIntrruptExcp) {
 				thIntrruptExcp.printStackTrace();
 			}
 		} catch (Exception exception) {
 			
 			try {
-				shutdownArtifactExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
+				shutdownAccAuthStatExecuterSrvc(scheduledExecutorService, accAuthStatusFuture);
 			} catch (InterruptedException thIntrptExcp) {
 				thIntrptExcp.printStackTrace();
 			}
@@ -149,7 +149,7 @@ public class AuthStatusRequestListener {
 
 	/**
 	 * Inner class that query SQL DB for Latest status.
-	 * @author 313727
+	 * @author Subhasis Samal
 	 * @version $Revision: 1.0 $
 	 */
 	private final class AccountAuthStatusTracker implements Runnable {
@@ -179,7 +179,7 @@ public class AuthStatusRequestListener {
 		@Override
 		public void run() {
 			//System.out.println("\nAttempt# "+attemptedRetry+"-ENTER RUN");
-			String artfactUpdtStatAfterCallback = "";
+			String artfactUpdtStatAfterPolling = "";
 			String accUpdatedAuthStat = null;
 				long execStartTime = System.currentTimeMillis();
 			if ((null == accAuthStatus || accAuthStatus.trim()
@@ -263,7 +263,7 @@ public class AuthStatusRequestListener {
 	 * @param scheduleResult ScheduledFuture<?>
 	 * @throws InterruptedException
 	 */
-	private void shutdownArtifactExecuterSrvc(ScheduledExecutorService schedulerSrvc, ScheduledFuture<?> scheduleResult) throws InterruptedException {
+	private void shutdownAccAuthStatExecuterSrvc(ScheduledExecutorService schedulerSrvc, ScheduledFuture<?> scheduleResult) throws InterruptedException {
 		scheduleResult.cancel(INTERRUPT_IF_RUNNING);
 		schedulerSrvc.shutdownNow();
 	}
